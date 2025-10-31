@@ -1,0 +1,11 @@
+Connections to LDR Module :
+ --> 3.3V on the ESP32 is connected to the VCC pin of the LDR module.
+ -->GND on the ESP32 is connected to the GND pin of the LDR module.
+ -->The DO (Digital Out) pin of the LDR module is connected to GPIO34 on the ESP32.
+
+Connections to IR Sensor:
+ -->IR Sensor OUT connects to GPIO27 on the ESP32. This pin will receive the signal from the sensor.
+ -->IR Sensor VCC connects to 5V (or 3.3V) on the ESP32 to provide power to the sensor.
+ -->IR Sensor GND connects to GND on the ESP32, which is the ground connection.
+ -->The LED Anode (long leg) connects to a 220Ω resistor, which then connects to GPIO2 on the ESP32. The resistor is used to limit the current flowing to the LED.
+ -->The LED Cathode (short leg) connects to GND on the ESP32.
