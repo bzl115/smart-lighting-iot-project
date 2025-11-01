@@ -1,31 +1,39 @@
-This IoT-based system uses LDR and IR sensors to automatically control lighting based on ambient light and object detection. The project focuses on efficient energy management by adjusting light intensity and switching functions in real time. It integrates both hardware and software components, providing hands-on experience with sensor interfacing, automation logic, and microcontroller programming.
+# 💡 IoT-Based Automatic Light Control System
 
-💡 Key Features
+This project automates lighting using **IR** and **LDR** sensors to detect motion and ambient light levels. The system turns the LED **ON only when it’s dark and motion is detected**, ensuring efficient energy use. It demonstrates how simple IoT principles and sensor integration can create practical smart-home applications.
 
-Automatic light control using LDR and IR sensors
+---
 
-Real-time intensity adjustment
+## ⚙️ Features
+- Automatic LED control based on **motion** and **light intensity**
+- Real-time detection and response using **IR** and **LDR** sensors  
+- Beginner-friendly design  
 
-Energy-efficient design
+---
 
-Simple and cost-effective hardware setup
+## 🧰 Hardware Used
+- **IR Sensor (PIR)** – Detects motion  
+- **LDR Sensor** – Detects ambient light level  
+- **LED** – Output indicator  
+- **Microcontroller** – ESP32 / NodeMCU / Arduino  
 
-Easy to modify and expand
+---
 
-⚙️ Tech Stack
+## 🧾 Code Overview
+The main logic is implemented in [`project_code.ino`](./project_code.ino):
 
-Hardware: LDR, IR sensor, microcontroller (Arduino/NodeMCU, etc.)
+The LED turns ON only if both conditions are true.
 
-Software: Embedded C / Arduino IDE
+Serial Monitor logs the system status for debugging and testing.
 
-Communication: Wired / optional IoT module for remote monitoring
+🔌 Connections
+Detailed pin connections are listed in the connections file.
+Each sensor’s output pin connects to the defined GPIO pins in the code.
 
-📘 Learning Outcomes
-
-Sensor data handling and integration
-
-IoT-based automation control
-
-Hardware-software interfacing fundamentals
-
-Real-time system implementation
+👥 Team
+Developed collaboratively by
+ALVIN SAJU  
+BASIL PETER 
+GOVIND JAYAPAL  
+JOYAL  
+NANDAGOPAL  
